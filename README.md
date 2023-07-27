@@ -1,1 +1,1 @@
-# IA_and_GA_Dinosaur_Google
+# Artificial intelligence and Genetic algorithm Dinosaur Google

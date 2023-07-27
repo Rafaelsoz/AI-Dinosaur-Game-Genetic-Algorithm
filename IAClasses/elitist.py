@@ -1,4 +1,4 @@
-from IA.neural_network import NN
+from IAClasses.neural_network import NN
 
 
 class Elitist:

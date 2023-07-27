@@ -1,5 +1,5 @@
 from GameClasses.ia_game import GameIA
-from IA.genetic_algorithm import GeneticAlgorithm
+from IAClasses.genetic_algorithm import GeneticAlgorithm
 from constants import draw_esc
 import numpy as np
 import pygame

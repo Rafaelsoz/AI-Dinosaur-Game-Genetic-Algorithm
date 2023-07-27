@@ -1,4 +1,4 @@
-from IA.neural_network import NN
+from IAClasses.neural_network import NN
 from constants import DINO_RUN, DINO_DOWN, DINO_JUMP
 from constants import RED_DINO_RUN, RED_DINO_JUMP, RED_DINO_DOWN
 from constants import GREEN_DINO_RUN, GREEN_DINO_JUMP, GREEN_DINO_DOWN

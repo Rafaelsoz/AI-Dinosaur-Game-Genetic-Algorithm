@@ -1,6 +1,6 @@
-from GameClasses.dinosaur_ia import DinosaurIA
-from IA.neural_network import NN
-from IA.elitist import Elitist
+from GameClasses.ia_dinosaur import DinosaurIA
+from IAClasses.neural_network import NN
+from IAClasses.elitist import Elitist
 import numpy as np
 import pickle
 

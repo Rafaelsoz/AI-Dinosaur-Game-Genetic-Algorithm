@@ -1,6 +1,6 @@
 from GameClasses.game import Game
 from GameClasses.dinosaur import Dinosaur
-from GameClasses.dinosaur_ia import DinosaurIA
+from GameClasses.ia_dinosaur import DinosaurIA
 from GameClasses.largecactus import LargeCactus
 from GameClasses.smallcactus import SmallCactus
 from constants import WHITE, DINO_DEAD, PURPLE_DINO_DEAD

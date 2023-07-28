@@ -89,9 +89,6 @@ class GeneticAlgorithm:
         self.elitists = self.elitists[0:self.num_of_elitists]
 
     def check_stagnation(self, max_score, epsilon: float = 0.98):
-        #if self.current_generation == 1 and max_score < 1000:
-        #    return True
-
         self.expected_score = (self.target/self.num_generations) * self.current_generation
         if max_score <= self.elitists[0].score * epsilon or max_score <= self.expected_score:
             self.stagnant_generations += 1

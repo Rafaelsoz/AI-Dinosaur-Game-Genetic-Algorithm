@@ -61,7 +61,7 @@ def start_ia_game(screen, num_generations, population_size, target: int = 50000,
             game.update_clouds()
             game.update_score_and_speed()
 
-        if game.current_generation >= genetic.num_generations or game.score == genetic.target:
+        if game.current_generation == genetic.num_generations or game.score >= genetic.target:
             if not game.end:
                 game.end = True
                 game.draw_finished_test()

@@ -8,7 +8,7 @@ import pickle
 class GeneticAlgorithm:
     def __init__(self, num_generations, population_size, target, rate_mutation: float = 0.005,
                  start_rate_crossing: float = 0.8, start_rate_mutation: float = 0.2, decimal_place: int = 5,
-                 number_of_elitists: int = 4, limit_stagnant_generations: int = 18, inferior_limit_pos: int = 80,
+                 number_of_elitists: int = 4, limit_stagnant_generations: int = 20, inferior_limit_pos: int = 80,
                  upper_limit_pos: int = 220):
 
         self.decimal_place = 10 ** decimal_place

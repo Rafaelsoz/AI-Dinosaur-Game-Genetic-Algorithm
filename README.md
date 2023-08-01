@@ -5,9 +5,14 @@
 Sumario
 =================
 <!--ts-->
-   * [T-Rex Game](#Sobre)
-   * [Inteligencia Aritificial](#instalacao)
-      * [Perpectron](#tabela-de-conteudo)
-      * [Rede Neural](#tabela-de-conteudo)
-   * [Algoritimo Genetico](#como-usar)
+   * [T-Rex Game](#T-Rex-Game)
+   * [Inteligencia Aritificial](#Inteligencia-Aritificial)
+      * [Perpectron](#Perpectron)
+      * [Rede Neural](#Rede-Neural)
+   * [Algoritimo Genetico](#Algoritimo-Genetico)
 <!--te-->
+
+### Pré-Requisitos  
+### Bibliotecas Ultilizadas
+
+# T-Rex Game(#T-Rex-Game)

@@ -12,7 +12,13 @@ Sumario
    * [Algoritimo Genetico](#Algoritimo-Genetico)
 <!--te-->
 
+=================
+
 ### Pré-Requisitos  
 ### Bibliotecas Ultilizadas
 
-# T-Rex Game(#T-Rex-Game)
+* [T-Rex Game](#T-Rex-Game)
+* [Inteligencia Aritificial](#Inteligencia-Aritificial)
+  * [Perpectron](#Perpectron)
+  * [Rede Neural](#Rede-Neural)
+* [Algoritimo Genetico](#Algoritimo-Genetico)

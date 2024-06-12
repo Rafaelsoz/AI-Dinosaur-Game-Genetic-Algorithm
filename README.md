@@ -1,5 +1,6 @@
 # Construction and Optimization of a Neural Network using a Genetic Algorithm for the Dinosaur Game
-<img src="Assets/gif.gif" alt="Show Game" style="max-width:100%; height:auto;">
+
+<img src="Assets/Dino Vf2.gif" alt="Show Game" style="max-width:100%; height:auto;">
 
 ## Summary
 1. [Introduction](#introduction)
@@ -65,6 +66,9 @@ To explore the project, follow the steps below to download and run the main file
 python main.py
 ```
 After execution, the game will start, and you will have three options:
+
+<img src="Assets/trex-opt.png" alt="Show Game" style="max-width:40%; height:auto;">
+
 1. Play
 2. Play against the AI
 3. Watch the iterative training

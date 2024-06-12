@@ -1,4 +1,4 @@
-# Construction and Optimization of a Neural Network using a Genetic Algorithm for the T-Rex Game
+# Construction and Optimization of a Neural Network using a Genetic Algorithm for the Dinosaur Game
 <img src="Assets/gif.gif" alt="Show Game" style="max-width:100%; height:auto;">
 
 ## Summary

@@ -1,7 +1,8 @@
 <h1 align="center" style="font-weight: bold;">Construction and Optimization of a Neural Network using a Genetic Algorithm for the Dinosaur Game
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-[![PyPI license](https://img.shields.io/pypi/l/ansicolortags.svg)](https://github.com/Rafaelsoz/AI-Dinosaur-Game-Genetic-Algorithm/blob/main/LICENSE)
+![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
+[![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](https://github.com/Rafaelsoz/AI-Dinosaur-Game-Genetic-Algorithm/blob/main/LICENSE)
 
 
 <p align='center'>

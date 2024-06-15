@@ -15,8 +15,7 @@ In this repository, you will find the construction and optimization of a Neural 
 The T-Rex Game is an offline game available in the Google Chrome browser, where a dinosaur must jump over cacti and avoid obstacles to survive as long as possible. Its simplicity makes it excellent for development and testing.
 
 ## 🤖 Neural Network
-As mentioned earlier, the Neural Network was built using only the Numpy library. The idea is to understand the architecture and basic functioning behind libraries like PyTorch and TensorFlow. Neural Networks are structures composed of multiple artificial neurons organized in layers. These networks can learn and perform complex tasks through a training process, adjusting the weights of connections between neurons to minimize error in the output.
-
+               
 <table>
   <tr>
     <td>
@@ -32,8 +31,6 @@ As mentioned earlier, the Neural Network was built using only the Numpy library.
 </table>
 
 ## 🧬 Genetic Algorithm
-Genetic Algorithms are optimization methods inspired by Darwin's theory of evolution. They use processes of natural selection, crossover, and mutation to evolve solutions to specific problems over several generations, continuously improving the fitness of solutions.
-
 <table style="width:100%;">
   <tr>
     <td style="width:60%;">

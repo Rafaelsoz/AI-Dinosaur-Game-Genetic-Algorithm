@@ -38,7 +38,7 @@ Genetic Algorithms are optimization methods inspired by Darwin's theory of evolu
   <tr>
     <td style="width:60%;">
       <h3>GA Pipeline</h3>
-      <img src="Assets/GA.png" alt="ga pipeline" style="width:80%; height:auto;">
+      <img src="Assets/GA.png" alt="ga pipeline" style="width:100%; height:auto;">
     </td>
     <td style="width:40%;">
       <img src="Assets/large_gif.gif" alt="show pipeline" style="max-width:100%; height:auto;">

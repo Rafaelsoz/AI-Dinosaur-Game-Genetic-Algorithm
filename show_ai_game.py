@@ -1,17 +1,21 @@
-from GameClasses.ia_game import GameIA
-from IAClasses.genetic_algorithm import GeneticAlgorithm
+from GameClasses.ai_game import GameIA
+from AIClasses.genetic_algorithm import GeneticAlgorithm
 from constants import draw_esc
 import numpy as np
 import pygame
 import sys
 
 
-def start_ia_game(screen, num_generations, population_size, target: int = 50000, number_of_elitists: int = 3,
-                  inferior_limit_pos: int = 220, upper_limit_pos: int = 221):
+def start_ai_game(screen,
+                  num_generations,
+                  population_size,
+                  inferior_limit_pos: int = 80,
+                  upper_limit_pos: int = 220):
 
-    genetic = GeneticAlgorithm(num_generations, population_size, target, number_of_elitists=number_of_elitists,
-                               inferior_limit_pos=inferior_limit_pos, upper_limit_pos=upper_limit_pos,
-                               start_rate_crossing=0.8, start_rate_mutation=0.2)
+    genetic = GeneticAlgorithm(num_generations,
+                               population_size,
+                               inferior_limit_pos=inferior_limit_pos,
+                               upper_limit_pos=upper_limit_pos)
     game = GameIA(screen)
 
     genetic.start_population()
@@ -37,9 +41,7 @@ def start_ia_game(screen, num_generations, population_size, target: int = 50000,
 
         if not game.reset and not game.end:
             game.draw_game()
-            game.draw_cross_rate(genetic.current_rate_crossing)
-            game.draw_mutation_rate(genetic.current_rate_mutation)
-            game.draw_expected_score(genetic.expected_score)
+            game.draw_mutation_rate(genetic.rate_mutation)
             game.draw_stagnant_generations(genetic.stagnant_generations)
             draw_esc(game.screen)
             game.draw_graphics_score()
@@ -59,9 +61,11 @@ def start_ia_game(screen, num_generations, population_size, target: int = 50000,
                 game.reset = True
 
             game.update_clouds()
+
+            # Update score of game and agents
             game.update_score_and_speed()
 
-        if game.current_generation == genetic.num_generations or game.score >= genetic.target:
+        if game.current_generation == genetic.num_generations:
             if not game.end:
                 game.end = True
                 game.draw_finished_test()
@@ -70,9 +74,7 @@ def start_ia_game(screen, num_generations, population_size, target: int = 50000,
 
         elif game.reset and not game.end:
             game.game_reset()
-
-            genetic.evaluation()
-            genetic.elitism()
+            genetic.evaluate()
 
             # Renewing population if necessary
             if genetic.check_stagnation(game.max_score):
@@ -86,6 +88,7 @@ def start_ia_game(screen, num_generations, population_size, target: int = 50000,
                 game.best_scores = [0]
                 game.mean_scores = [0]
                 game.current_generation = 0
+                genetic.rate_mutation = genetic.start_rate_mutation
 
             # Create new population
             else:
@@ -93,13 +96,11 @@ def start_ia_game(screen, num_generations, population_size, target: int = 50000,
                 game.mean_scores.append(genetic.get_mean_score())
                 print(f"\nCurrent Generation :: {game.current_generation}")
                 print(f"Stagnation Generation :: {genetic.stagnant_generations}")
-                print(f"Mutation Rate :: {genetic.current_rate_mutation},\t\t "
-                      f"Crossing Rate :: {genetic.current_rate_crossing}")
+                print(f"Mutation Rate :: {genetic.rate_mutation}")
                 print(f"Hi-Score :: {game.hi_score}, Max-Score :: {game.max_score}")
                 genetic.info_betters()
 
                 genetic.create_new_population()
-                genetic.update_rates()
                 game.dinosaurs = genetic.population
 
             game.current_generation += 1

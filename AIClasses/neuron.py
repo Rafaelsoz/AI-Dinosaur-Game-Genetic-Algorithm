@@ -5,8 +5,10 @@ class Neuron:
     def __init__(self, input_size, output_size):
         self.input_size = input_size
         self.output_size = output_size
-        self.weights = np.random.randn(self.output_size, self.input_size) * 10
-        self.bias = np.random.randn(self.output_size)
+
+        he_std = np.sqrt(2 / self.input_size)
+        self.weights = np.random.normal(0, he_std, (self.output_size, self.input_size))
+        self.bias = np.zeros(self.output_size)
 
     def forward(self, x: np.array):
         return x @ self.weights.T + self.bias

@@ -1,4 +1,4 @@
-from IAClasses.neural_network import NN
+from AIClasses.neural_network import NN
 from constants import DINO_RUN, DINO_DOWN, DINO_JUMP
 from constants import RED_DINO_RUN, RED_DINO_JUMP, RED_DINO_DOWN
 from constants import GREEN_DINO_RUN, GREEN_DINO_JUMP, GREEN_DINO_DOWN
@@ -9,7 +9,7 @@ import numpy as np
 import pygame
 
 
-class DinosaurIA:
+class DinosaurAI:
     def __init__(self, x_pos: int = 200, color: str = "grey"):
         # NN Dinosar
         self.neurons = NN(np.array([6, 6, 6, 2]))

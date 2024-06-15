@@ -1,23 +1,21 @@
-# Construction and Optimization of a Neural Network using a Genetic Algorithm for the Dinosaur Game
+<h1 align="center" style="font-weight: bold;">Construction and Optimization of a Neural Network using a Genetic Algorithm for the Dinosaur Game
 
-<img src="Assets/Dino Vf2.gif" alt="Show Game" style="max-width:100%; height:auto;">
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+[![PyPI license](https://img.shields.io/pypi/l/ansicolortags.svg)](https://github.com/Rafaelsoz/AI-Dinosaur-Game-Genetic-Algorithm/blob/main/LICENSE)
 
-## Summary
-1. [Introduction](#introduction)
-2. [Neural Network](#neural-network)
-3. [Genetic Algorithm](#genetic-algorithm)
-4. [Prerequisites](#prerequisites)
-5. [Usage](#usage)
-6. [License](#license)
 
-## Introduction
+<p align='center'>
+	<img src="Assets/Dino Vf2.gif" alt="Show Game" style="max-width:100%; height:auto;">
+<p>
+
+
+<h2 id="started">📌 About</h2>
 In this repository, you will find the construction and optimization of a Neural Network using only the Numpy library for building the architecture and a Genetic Algorithm for optimization. The main goal is to enable Artificial Intelligence to play the T-Rex Game interactively with the environment.
 
 The T-Rex Game is an offline game available in the Google Chrome browser, where a dinosaur must jump over cacti and avoid obstacles to survive as long as possible. Its simplicity makes it excellent for development and testing.
 
-## Neural Network
-As mentioned earlier, the Neural Network was built using only the Numpy library. The idea is to understand the architecture and basic functioning behind libraries like PyTorch and TensorFlow. Neural Networks are structures composed of multiple artificial neurons organized in layers. These networks can learn and perform complex tasks through a training process, adjusting the weights of connections between neurons to minimize error in the output.
-
+## 🤖 Neural Network
+               
 <table>
   <tr>
     <td>
@@ -32,9 +30,7 @@ As mentioned earlier, the Neural Network was built using only the Numpy library.
   </tr>
 </table>
 
-## Genetic Algorithm
-Genetic Algorithms are optimization methods inspired by Darwin's theory of evolution. They use processes of natural selection, crossover, and mutation to evolve solutions to specific problems over several generations, continuously improving the fitness of solutions.
-
+## 🧬 Genetic Algorithm
 <table style="width:100%;">
   <tr>
     <td style="width:60%;">
@@ -53,25 +49,27 @@ Genetic Algorithms are optimization methods inspired by Darwin's theory of evolu
   </tr>
 </table>
 
-## Prerequisites
+## 📝 Requirements
 Before starting, ensure you have the following prerequisites installed on your system:
 - [Python 3.x](https://www.python.org/downloads/)
 - [NumPy](https://numpy.org/install/)
 - [Matplotlib](https://matplotlib.org/stable/users/installing.html)
 - [Pygame](https://www.pygame.org/docs/)
 
-## Usage
+## 🚀 Usage
 To explore the project, follow the steps below to download and run the main file:
 ```sh
 python main.py
 ```
 After execution, the game will start, and you will have three options:
 
+<p align='center'>
 <img src="Assets/trex-opt.png" alt="Show Game" style="max-width:40%; height:auto;">
+<p>
 
 1. Play
 2. Play against the AI
 3. Watch the iterative training
 
-## License
-This project is licensed under the MIT License. See the LICENSE file for more information.
+## 📃 License
+This project is under [MIT](LICENSE.txt) license.

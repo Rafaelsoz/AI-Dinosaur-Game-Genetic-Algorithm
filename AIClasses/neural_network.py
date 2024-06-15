@@ -1,4 +1,4 @@
-from IAClasses.neuron import Neuron
+from AIClasses.neuron import Neuron
 import numpy as np
 
 

@@ -2,9 +2,9 @@ import pygame
 from GameClasses.cloud import Cloud
 from constants import WIDTH, HEIGHT, WHITE, BLACK, GREY, PATH, DINO_RUN
 from constants import draw_esc
-from show_ia_game import start_ia_game
+from show_ai_game import start_ai_game
 from normal_game import start_game
-from player_vs_ia import start_vs_game
+from player_vs_ai import start_vs_game
 import sys
 import os
 
@@ -66,7 +66,7 @@ def main():
                     start_vs_game(screen)
 
                 if event.key == pygame.K_3:
-                    start_ia_game(screen, 80, 200)
+                    start_ai_game(screen, 80, 200)
 
         pygame.display.flip()
 

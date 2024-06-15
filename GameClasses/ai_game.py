@@ -91,7 +91,7 @@ class GameIA(Game):
     def draw_generation(self):
         font = pygame.font.SysFont('comicsansms', 20, True, False)
         text = font.render("Generation: " + str(self.current_generation), True, BLACK)
-        self.screen.blit(text, (1100, 210))
+        self.screen.blit(text, (1100, 185))
 
     def draw_cross_rate(self, cross_rate):
         font = pygame.font.SysFont('comicsansms', 20, True, False)
@@ -101,7 +101,7 @@ class GameIA(Game):
     def draw_mutation_rate(self, mutation_rate):
         font = pygame.font.SysFont('comicsansms', 20, True, False)
         text = font.render("Mutation Rate: " + str(round(mutation_rate, 4)), True, BLACK)
-        self.screen.blit(text, (1100, 260))
+        self.screen.blit(text, (1100, 210))
 
     def draw_game(self):
         self.screen.fill(WHITE)

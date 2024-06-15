@@ -1,6 +1,6 @@
 from GameClasses.game import Game
 from GameClasses.dinosaur import Dinosaur
-from GameClasses.ia_dinosaur import DinosaurIA
+from GameClasses.ai_dinosaur import DinosaurAI
 from GameClasses.largecactus import LargeCactus
 from GameClasses.smallcactus import SmallCactus
 from constants import WHITE, DINO_DEAD, PURPLE_DINO_DEAD
@@ -13,7 +13,7 @@ def load_dino(path: str = "Saves/dino_trained.obj"):
     with open(path, "rb") as f:
         best = pickle.load(f)
 
-    dinosaur = DinosaurIA(color="purple")
+    dinosaur = DinosaurAI(color="purple")
     dinosaur.neurons = best.nn
 
     return dinosaur
